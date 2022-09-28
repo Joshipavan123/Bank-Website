@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>fixeddiposite</title>
+<link rel="stylesheet" type="text/css" href="fixediposit.css">
+
+<script>
+function man()
+	{var prnp=document.getElementById('prnp').value;
+	var r=document.getElementById('r').value;
+	var ci=document.getElementById('ci').value;
+	var time=document.getElementById('time').value;
+	var ir=r/ci;var total=document.getElementById('total').value;
+	document.getElementById('total').value=(document.getElementById('prnp').value*Math.pow((1 + ir/100),(time/12*ci))).toFixed(2);}
+</script>
+</head>
+<body>
+	<br>
+<h3>
+We are providing our users to know the how fixed diposite is going on in our bank, so here u have to put in the place principle ammount that u want to diposite, in the place of interest rate u have to put what 8 that is what bank provides interest rate 8%
+,at the place of Interest Compounding u have to chose in which duration u want to take mone from the bank and in the place of period(months) u have to just choose how man mounths do u want take ur mone in bank and u will see the total mone u will take during ur fixed diposite.
+</h3>
+
+<form><div id="for">
+	<p><sup>*</sup>firstl read above mention details</p>
+	<h1>Fixed Deposit Calculator</h1>
+	 	<table><tr><td>
+		Principal Ammount<td><input id="prnp" type="number" required placeholder="100000"><tr><td>
+		Interest Rate<td><input id="r" type="number" required placeholder="8"><tr><td>
+		Interest Compounding<td>
+		<select id="ci" type="number" required>
+			 	<option value=1>Monthly
+				<option value=2 selected>Quarterly
+				<option value=3>Half Yearly
+				<option value=4>Yearly
+			</select>
+			<tr><td>Period (months)<td><input id="time" type="number" required placeholder="35"><tr>
+		<td><button type=reset>Reset</button><td><br>
+		<button type=button onclick=man();>Submit</button><br>
+		<tr><td>Total Value<td><input id="total" type="number" placeholder="total is"></table>
+		</div>
+	</form>
+</div>
+</body>
+</html>

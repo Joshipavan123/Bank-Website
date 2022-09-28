@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Carloan</title>
+<link rel="stylesheet" type="text/css" href="EMI.css">
+
+<script>
+function EMI1()
+	{var prnp=document.getElementById('prnp').value;
+	var n=document.getElementById('n').value;
+	
+	//r is 12 for car loan
+	var r1=10;
+	var r=r1/(12*100);
+	var x=1+r;
+	var v=Math.pow(x,n);
+	var z=v-1;
+
+	var EMI=document.getElementById('EMI').value;
+	document.getElementById('EMI').value=(document.getElementById('prnp').value*(r*v)/z).toFixed(2);
+}
+</script>
+</head>
+<body>
+	<br><br>
+<h3>
+What is EMI?
+Equated Monthly Installment - EMI for short - is the amount payable every month to the bank or any other financial institution until the loan amount is fully paid off. It consists of the interest on loan as well as part of the principal amount to be repaid. The sum of principal amount and interest is divided by the tenure, i.e., number of months, in which the loan has to be repaid. This amount has to be paid monthly. The interest component of the EMI would be larger during the initial months and gradually reduce with each payment. The exact percentage allocated towards payment of the principal depends on the interest rate. Even though your monthly EMI payment won't change, the proportion of principal and interest components will change with time. With each successive payment, you'll pay more towards the principal and less in interest.
+</h3>
+
+<form><div id="for">
+	<p><sup>*</sup>firstl read above mention details</p>
+	<h1>Car loan Calculator</h1>
+	 	<table><tr><td>
+		Principal Ammount<td><input id="prnp" type="number" required placeholder="100000"><tr><td>
+		Duration in months<td><input id="n" type="number" required placeholder="30"><tr>
+		<td><button type=reset>Reset</button><td><br>
+		<button type=button onclick=EMI1();>Submit</button><br>
+		<tr><td>EMI<td><input id="EMI" type="number" placeholder="EMI is">
+
+		</table>
+		</div>
+	</form>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p><h2>
+How to Use EMI Calculator?</h2><br><pre>
+With colourful charts and instant results, our EMI Calculator is easy to use, intuitive to understand and is quick
+to perform. You can calculate EMI for home loan, car loan, personal loan, education loan or any other fully amortizing loan using this calculator.
+
+Enter the following information in the EMI Calculator:
+
+Principal loan amount you wish to avail (rupees)
+Loan term (months or years)
+Rate of interest (percentage)
+EMI in advance OR EMI in arrears (for car loan only)
+Use the slider to adjust the values in the EMI calculator form. If you need to enter more precise values, you can
+type the values directly in the relevant boxes provided above. As soon as the values are changed using the slider
+(or hit the 'tab' key after entering the values directly in the input fields), EMI calculator will re-calculate your monthly payment (EMI) amount.
+
+A pie chart depicting the break-up of total payment (i.e., total principal vs. total interest payable) 
+is also displayed. It displays the percentage of total interest versus principal amount in the sum total of all 
+payments made against the loan. The payment schedule table showing payments made every month / year for the 
+entire loan duration is displayed along with a chart showing interest and principal components paid each year. 
+A portion of each payment is for the interest while the remaining amount is applied towards the principal balance.
+During initial loan period, a large portion of each payment is devoted to interest. With passage of time, larger
+portions pay down the principal. The payment schedule also shows the intermediate outstanding balance for each
+year which will be carried over to the next year.</pre>
+</p>
+</body>
+</html>

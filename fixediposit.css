@@ -1,0 +1,67 @@
+body{
+	margin: 0;
+	padding:0;
+	font-family: sans-serif;
+	background-color: #e0e0d1;
+}
+#for{
+	width: 300px;
+	padding: 110px;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	text-transform: translate(-50%,-50%);
+	background-color: #e6ffe6;
+	text-align: center;
+}
+#for h1{
+	background: #b3ffff;
+	border-radius: 24px;
+	border:2px solid #2ecc71;
+	margin: 20px auto;
+	padding: 14px 40px;
+	color: red;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 22;
+}
+
+#for input[type="number"],select
+{
+	border:0;
+	background:none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border:2px solid #3498db;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: red;
+	border-radius: 24px;
+	transition:0.25s;
+}
+#for input[type="number"]:focus
+{
+	width: 280px;
+	border-color: #2ecc71;
+}
+#for button[type="button"],#for button[type="reset"]
+{
+	border:0;
+	background:none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border:2px solid #2ecc71;
+	padding: 14px 40px;
+	outline: none;
+	color: #000000;
+	border-radius: 24px;
+	transition:0.25s;
+	cursor: pointer;
+}
+#for button[type="button"]:hover,#for button[type="reset"]:hover
+{
+	background: #66ffb3;
+}
